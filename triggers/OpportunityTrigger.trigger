@@ -25,6 +25,7 @@ trigger OpportunityTrigger on Opportunity (before insert,after update, after ins
                 }
                 if(accountList != null && accountList.size() > 0){
                     update accountList;
+					//Shubhangi's comment
                 }
             }
         }
