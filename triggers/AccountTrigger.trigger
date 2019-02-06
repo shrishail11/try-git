@@ -19,6 +19,7 @@ trigger AccountTrigger on Account (before insert,after update, after insert,befo
                     }
                 }
                 if(opportunityList != null && opportunityList.size() > 0){
+                    //Dont try 
                     update opportunityList;
                 }
             //}
