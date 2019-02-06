@@ -19,8 +19,13 @@ trigger AccountTrigger on Account (before insert,after update, after insert,befo
                     }
                 }
                 if(opportunityList != null && opportunityList.size() > 0){
-                    //Dont try 
+				try {
+                    //Updated after line 22
                     update opportunityList;
+					}
+					catch(exception ex) {
+					System.debug('Error is:'+ex);
+					}
                 }
             //}
         }
